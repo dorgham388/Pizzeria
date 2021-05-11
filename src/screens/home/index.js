@@ -7,5 +7,5 @@ export default function Home() {
   // const dispatch = useDispatch();
   // const [state, setState] = useState({});
 
-  return <div>{process.env.REACT_APP_API_URL}</div>;
+  return <div>YA DALI YA MREKTI YA MTALLAH ZAYAYAY</div>;
 }
