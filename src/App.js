@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Switch } from "react-router-dom";
 import { publicRoutes, protectedRoutes } from "routes";
-import PublicRoute from "./routes/publicRoute";
-import ProtectedRoute from "./routes/protectedRoute";
+import PublicRoute from "routes/publicRoute";
+import ProtectedRoute from "routes/protectedRoute";
 
 import "./App.css";
 
