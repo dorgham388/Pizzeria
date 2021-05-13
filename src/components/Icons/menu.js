@@ -2,7 +2,7 @@
  * Created Date: Thursday May 13th 2021
  * Author: Amir Dorgham
  * -----
- * Last Modified: Thursday, May 13th 2021, 6:37:01 pm
+ * Last Modified: Thursday, May 13th 2021, 10:15:26 pm
  * Modified By: Amir Dorgham
  * -----
  */
@@ -10,7 +10,7 @@
 import React from "react";
 import tw from "twin.macro";
 
-const MenuIcon = tw.div`md:hidden transition duration-300 ease-in-out text-gray-900 hover:text-yellow-500 hover:bg-gray-800 rounded-lg  dark:text-white dark:hover:text-yellow-500 h-8 w-8 cursor-pointer`;
+const MenuIcon = tw.div`md:hidden transition duration-300 ease-in-out text-gray-900 hover:text-yellow-500 dark:hover:bg-gray-800 rounded-lg  dark:text-white dark:hover:text-yellow-500 h-8 w-8 cursor-pointer`;
 const Button = tw.div`outline-none focus:outline-none`;
 
 const Menu = (props) => {
