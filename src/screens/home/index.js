@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 // import { useSelector, useDispatch } from "react-redux";
 import tw from "twin.macro";
 import Header from "features/header";
-
+import Ex1 from "features/Ex1";
 const Container = tw.div`bg-gray-50 dark:bg-gray-900 min-h-screen `;
 
 const Home = () => {
@@ -14,6 +14,7 @@ const Home = () => {
   return (
     <Container>
       <Header />
+      <Ex1 />
     </Container>
   );
 };
