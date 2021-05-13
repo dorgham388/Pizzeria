@@ -2,7 +2,7 @@
  * Created Date: Wednesday May 12th 2021
  * Author: Amir Dorgham
  * -----
- * Last Modified: Thursday, May 13th 2021, 10:03:10 pm
+ * Last Modified: Thursday, May 13th 2021, 11:58:11 pm
  * Modified By: Amir Dorgham
  * -----
  */
@@ -18,7 +18,7 @@ import LanguageDropdown from "components/dropdowns/language";
 
 import tw from "twin.macro";
 
-const Container = tw.div`flex justify-between items-center px-6 md:px-8 h-16`;
+const Container = tw.div`flex justify-between items-center px-6 md:px-8 h-16 min-w-full`;
 const LeftContainer = tw.div`flex justify-around items-center`;
 const RightContainer = tw.div`flex justify-around items-center`;
 
