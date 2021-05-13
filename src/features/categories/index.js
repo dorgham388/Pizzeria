@@ -2,14 +2,14 @@
  * Created Date: Wednesday May 12th 2021
  * Author: Amir Dorgham
  * -----
- * Last Modified: Thursday, May 13th 2021, 4:48:16 am
+ * Last Modified: Friday, May 14th 2021, 12:17:44 am
  * Modified By: Jasser Bouzidi
  * -----
  */
 
 import React, { useState } from "react";
-import Filled from "components/ex1/buttons/filled";
-import Title from "components/ex1/titles/ex1";
+import Filled from "components/Buttons/filled";
+import Title from "components/titles/categories";
 import tw from "twin.macro";
 
 const categories = [
@@ -35,7 +35,7 @@ const categories = [
   },
 ];
 const FilledButton = tw(Filled)`mr-3`;
-const Container = tw.div`flex flex-col flex-wrap justify-center items-center px-8 my-12 `;
+const Container = tw.div`flex flex-col flex-wrap justify-center items-center px-8 my-12 w-full`;
 const Row = tw.div` my-2 flex flex-wrap justify-start items-center w-full`;
 
 const Button = () => {

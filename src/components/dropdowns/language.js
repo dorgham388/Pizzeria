@@ -61,7 +61,7 @@ const Dropdown = ({ children, color, ...props }) => {
               ref={popoverDropdownRef}
               className={
                 (dropdownPopoverShow ? "block " : "hidden ") +
-                (color === "white" ? "bg-white " : bgColor + " ") +
+                "bg-white " +
                 "text-base z-50 float-left p-2 px-3 list-none text-left rounded shadow-lg mt-1"
               }
               style={{ minWidth: "12rem" }}
