@@ -2,7 +2,7 @@
  * Created Date: Friday May 14th 2021
  * Author: Amir Dorgham
  * -----
- * Last Modified: Saturday, May 15th 2021, 12:41:54 am
+ * Last Modified: Saturday, May 15th 2021, 12:47:14 am
  * Modified By: Amir Dorgham
  * -----
  */
@@ -48,7 +48,7 @@ const Dropdown = ({
   return (
     <>
       <motion.div
-        className="flex flex-col  w-full"
+        className="flex flex-col w-full inline md:hidden"
         animate={isOpen ? "open" : "closed"}
         variants={variants}
         transition={{ duration: 0.4 }}
