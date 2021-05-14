@@ -2,7 +2,7 @@
  * Created Date: Wednesday May 12th 2021
  * Author: Amir Dorgham
  * -----
- * Last Modified: Friday, May 14th 2021, 7:51:08 pm
+ * Last Modified: Saturday, May 15th 2021, 12:08:30 am
  * Modified By: Amir Dorgham
  * -----
  */
@@ -57,7 +57,7 @@ const Header = () => {
           )}
         </RightContainer>
       </Row>
-      {open && <MenuDropdown />}
+      {<MenuDropdown open={open} />}
     </Container>
   );
 };

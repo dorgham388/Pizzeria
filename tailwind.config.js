@@ -14,9 +14,14 @@ module.exports = {
       red: colors.rose,
       yellow: colors.amber,
     },
-    extend: {},
+    extend: {
+      transitionProperty: {
+        height: "height",
+      },
+    },
   },
   variants: {
+    height: ["responsive", "hover", "focus"],
     extend: {},
   },
   plugins: [],
