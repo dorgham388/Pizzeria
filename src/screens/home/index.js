@@ -6,7 +6,7 @@ import Header from "features/header";
 import Categories from "features/categories";
 import Footer from "features/footer";
 
-const Container = tw.div`transition duration-300 ease-in-out bg-gray-50 dark:bg-gray-900 min-h-screen `;
+const Container = tw.div`transition duration-300 ease-in-out bg-gray-50 dark:bg-gray-900 min-h-screen w-full overflow-hidden`;
 
 const Home = () => {
   // const count = useSelector((state) => state);
