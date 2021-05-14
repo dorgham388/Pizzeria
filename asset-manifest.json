@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.23786ea1.chunk.css",
-    "main.js": "/static/js/main.30d0ad32.chunk.js",
-    "main.js.map": "/static/js/main.30d0ad32.chunk.js.map",
+    "main.css": "/static/css/main.5bc5449d.chunk.css",
+    "main.js": "/static/js/main.9e789fc4.chunk.js",
+    "main.js.map": "/static/js/main.9e789fc4.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.370a152e.js",
     "runtime-main.js.map": "/static/js/runtime-main.370a152e.js.map",
     "static/js/2.560467a0.chunk.js": "/static/js/2.560467a0.chunk.js",
     "static/js/2.560467a0.chunk.js.map": "/static/js/2.560467a0.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.23786ea1.chunk.css.map": "/static/css/main.23786ea1.chunk.css.map",
+    "static/css/main.5bc5449d.chunk.css.map": "/static/css/main.5bc5449d.chunk.css.map",
     "static/js/2.560467a0.chunk.js.LICENSE.txt": "/static/js/2.560467a0.chunk.js.LICENSE.txt",
     "static/media/discord.9cc6df1c.svg": "/static/media/discord.9cc6df1c.svg",
     "static/media/fb.526ef646.svg": "/static/media/fb.526ef646.svg",
-    "static/media/global.svg": "/static/media/global.ec3ec671.svg",
+    "static/media/global.svg": "/static/media/global.f2e59fcf.svg",
     "static/media/instagram.e9177a41.svg": "/static/media/instagram.e9177a41.svg",
     "static/media/logo.afbbdd06.svg": "/static/media/logo.afbbdd06.svg",
     "static/media/skype.1acb9c9f.svg": "/static/media/skype.1acb9c9f.svg",
@@ -21,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.370a152e.js",
     "static/js/2.560467a0.chunk.js",
-    "static/css/main.23786ea1.chunk.css",
-    "static/js/main.30d0ad32.chunk.js"
+    "static/css/main.5bc5449d.chunk.css",
+    "static/js/main.9e789fc4.chunk.js"
   ]
 }
