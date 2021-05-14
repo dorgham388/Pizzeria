@@ -2,7 +2,7 @@
  * Created Date: Thursday May 13th 2021
  * Author: Amir Dorgham
  * -----
- * Last Modified: Thursday, May 13th 2021, 11:48:26 pm
+ * Last Modified: Friday, May 14th 2021, 7:54:53 pm
  * Modified By: Amir Dorgham
  * -----
  */
@@ -15,7 +15,7 @@ const Button = tw.div`outline-none focus:outline-none`;
 
 const Menu = (props) => {
   return (
-    <MenuIcon>
+    <MenuIcon onClick={props.onClick}>
       <Button>
         <span className="sr-only">Open menu</span>
         <svg

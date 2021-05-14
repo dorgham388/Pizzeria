@@ -14,7 +14,7 @@ import russia from "assets/images/flags/russia.jpg";
 const DropdownItem = tw.div`flex justify-start items-center my-1 cursor-pointer hover:bg-gray-100 p-2 rounded-lg`;
 const Flag = tw.img`w-7`;
 const Language = tw.span`mx-3`;
-const Title = tw.span`mx-3 hidden md:inline`;
+const Title = tw.span`ml-3`;
 
 const Global = tw(GlobalIcon)`w-9 h-9`;
 
