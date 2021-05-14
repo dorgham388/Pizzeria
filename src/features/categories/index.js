@@ -2,7 +2,7 @@
  * Created Date: Wednesday May 12th 2021
  * Author: Amir Dorgham
  * -----
- * Last Modified: Friday, May 14th 2021, 12:17:44 am
+ * Last Modified: Friday, May 14th 2021, 12:38:09 am
  * Modified By: Jasser Bouzidi
  * -----
  */
@@ -34,7 +34,7 @@ const categories = [
     category: "Sanctrum of Domination",
   },
 ];
-const FilledButton = tw(Filled)`mr-3`;
+const FilledButton = tw(Filled)`mr-2`;
 const Container = tw.div`flex flex-col flex-wrap justify-center items-center px-8 my-12 w-full`;
 const Row = tw.div` my-2 flex flex-wrap justify-start items-center w-full`;
 
