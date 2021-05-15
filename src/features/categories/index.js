@@ -2,13 +2,13 @@
  * Created Date: Wednesday May 12th 2021
  * Author: Amir Dorgham
  * -----
- * Last Modified: Friday, May 14th 2021, 12:38:09 am
- * Modified By: Jasser Bouzidi
+ * Last Modified: Saturday, May 15th 2021, 2:30:43 pm
+ * Modified By: Amir Dorgham
  * -----
  */
 
 import React, { useState } from "react";
-import Filled from "components/Buttons/filled";
+import Filled from "components/buttons/filled";
 import Title from "components/titles/categories";
 import tw from "twin.macro";
 
@@ -38,7 +38,7 @@ const FilledButton = tw(Filled)`mr-2`;
 const Container = tw.div`flex flex-col flex-wrap justify-center items-center px-8 my-12 w-full`;
 const Row = tw.div` my-2 flex flex-wrap justify-start items-center w-full`;
 
-const Button = () => {
+const Categories = () => {
   const [selected, setSelected] = useState(0);
   return (
     <Container>
@@ -61,4 +61,4 @@ const Button = () => {
     </Container>
   );
 };
-export default Button;
+export default Categories;

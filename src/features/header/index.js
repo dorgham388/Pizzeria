@@ -2,7 +2,7 @@
  * Created Date: Wednesday May 12th 2021
  * Author: Amir Dorgham
  * -----
- * Last Modified: Saturday, May 15th 2021, 2:06:26 am
+ * Last Modified: Saturday, May 15th 2021, 6:06:11 am
  * Modified By: Amir Dorgham
  * -----
  */
@@ -14,8 +14,8 @@ import Menu from "components/Icons/menu";
 import Close from "components/Icons/close";
 
 import MenuDropdown from "components/dropdowns/menu";
-import OutlinedButton from "components/Buttons/outlined";
-import DefaultButton from "components/Buttons/default";
+import OutlinedButton from "components/buttons/outlined";
+import DefaultButton from "components/buttons/default";
 import LanguageDropdown from "components/dropdowns/language";
 import tw from "twin.macro";
 
@@ -40,9 +40,9 @@ const Header = (props) => {
           <LanguageDropdown className="hidden md:inline" />
         </LeftContainer>
         <RightContainer>
-          <OutlinedButton className="hidden md:inline">
+          <DefaultButton className="hidden md:inline">
             {props.t("header.buttons.0")}
-          </OutlinedButton>
+          </DefaultButton>
           <DefaultButton className="hidden md:inline">
             {props.t("header.buttons.1")}
           </DefaultButton>

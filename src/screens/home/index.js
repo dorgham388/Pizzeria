@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 // import React, { useState } from "react";
 // import { useSelector, useDispatch } from "react-redux";
 import tw from "twin.macro";
@@ -23,7 +23,7 @@ const Home = () => {
       <Header />
       <Grid>
         <MenuContainer>
-          <Menu />
+          <Menu isOpen={(open) => setOpen(open)} />
         </MenuContainer>
         <InnerContainer>
           <Categories />
