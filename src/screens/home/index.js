@@ -23,7 +23,7 @@ const Home = () => {
       <Header />
       <Grid>
         <MenuContainer>
-          <Menu isOpen={(open) => setOpen(open)} />
+          <Menu />
         </MenuContainer>
         <InnerContainer>
           <Categories />
