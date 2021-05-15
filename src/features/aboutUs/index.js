@@ -2,7 +2,7 @@
  * Created Date: Wednesday May 12th 2021
  * Author: Amir Dorgham
  * -----
- * Last Modified: Saturday, May 15th 2021, 8:58:21 pm
+ * Last Modified: Saturday, May 15th 2021, 9:59:38 pm
  * Modified By: Jasser Bouzidi
  * -----
  */
@@ -24,13 +24,16 @@ const Hexagone = tw(
 const Contact = tw(ContactIcon)`z-50 transform translate-y--11 `;
 const Shield = tw(ShieldIcon)`z-50 transform translate-y--10 `;
 const Expert = tw(ExpertIcon)`z-50 transform translate-y--9 `;
+const Div = tw.div`shadow-inner`;
 const AboutUs = () => {
   return (
     <Container>
       <CustomCard>
         <Hexagone />
         <Col>
-          <Contact />
+          <Div>
+            <Contact />
+          </Div>
           <Text>We are online NOW and 24/7</Text>
           <Description>
             We will contact you and start working on your order within 7 minutes
