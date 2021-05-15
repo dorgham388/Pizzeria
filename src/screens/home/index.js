@@ -4,9 +4,9 @@ import React, { useEffect } from "react";
 import tw from "twin.macro";
 import Header from "features/header";
 import Menu from "features/menu";
-
 import Categories from "features/categories";
 import Footer from "features/footer";
+import AboutUs from "features/aboutUs";
 
 const Container = tw.div`transition duration-300 ease-in-out bg-gray-50 dark:bg-gray-900 min-h-screen w-full overflow-hidden`;
 const Grid = tw.div`mt-4 md:mt-16 grid grid-cols-5  lg:grid-cols-8 gap-0 `;
@@ -29,6 +29,7 @@ const Home = () => {
           <Categories />
         </InnerContainer>
       </Grid>
+      <AboutUs />
       <Footer />
     </Container>
   );
