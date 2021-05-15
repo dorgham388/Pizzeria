@@ -2,11 +2,12 @@
  * Created Date: Friday May 14th 2021
  * Author: Amir Dorgham
  * -----
- * Last Modified: Saturday, May 15th 2021, 2:26:17 am
+ * Last Modified: Saturday, May 15th 2021, 4:24:19 am
  * Modified By: Amir Dorgham
  * -----
  */
 import React, { useEffect, useState } from "react";
+import Menu from "features/menu";
 import tw from "twin.macro";
 import { motion } from "framer-motion";
 import { withTranslation } from "react-i18next";
@@ -19,7 +20,7 @@ const Dropdown = (props) => {
     setIsOpen(props.open);
   });
   const variants = {
-    open: { height: 230 },
+    open: { height: 200 },
     closed: { height: 0 },
   };
 
@@ -67,6 +68,7 @@ const Dropdown = (props) => {
               </DropdownItem>
             );
           })}
+        {isOpen && !animating && <Menu></Menu>}
       </motion.div>
     </>
   );
