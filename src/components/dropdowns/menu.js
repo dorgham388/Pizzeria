@@ -2,15 +2,16 @@
  * Created Date: Friday May 14th 2021
  * Author: Amir Dorgham
  * -----
- * Last Modified: Saturday, May 15th 2021, 4:24:19 am
+ * Last Modified: Saturday, May 15th 2021, 5:43:30 pm
  * Modified By: Amir Dorgham
  * -----
  */
 import React, { useEffect, useState } from "react";
-import Menu from "features/menu";
 import tw from "twin.macro";
 import { motion } from "framer-motion";
 import { withTranslation } from "react-i18next";
+import Analog from "features/analog";
+import Separator from "components/separators/default";
 
 const DropdownItem = tw.a`flex justify-start items-center my-1 cursor-pointer hover:bg-yellow-500 transition duration-300 ease-in-out`;
 const Text = tw.button`p-3  w-full text-white transition duration-300 ease-in-out text-gray-900  hover:text-white dark:text-white dark:hover:text-gray-900 font-semibold outline-none focus:outline-none`;
@@ -18,7 +19,8 @@ const Text = tw.button`p-3  w-full text-white transition duration-300 ease-in-ou
 const Dropdown = (props) => {
   useEffect(() => {
     setIsOpen(props.open);
-  });
+  }, [props.open]);
+
   const variants = {
     open: { height: 200 },
     closed: { height: 0 },
@@ -59,7 +61,8 @@ const Dropdown = (props) => {
           setAnimating(false);
         }}
       >
-        {isOpen &&
+        {props.open &&
+          isOpen &&
           !animating &&
           navigation.map((element, i) => {
             return (
@@ -68,7 +71,6 @@ const Dropdown = (props) => {
               </DropdownItem>
             );
           })}
-        {isOpen && !animating && <Menu></Menu>}
       </motion.div>
     </>
   );
