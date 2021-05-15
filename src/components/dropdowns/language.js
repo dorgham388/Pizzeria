@@ -10,6 +10,7 @@ import spain from "assets/images/flags/spain.jpg";
 import germany from "assets/images/flags/germany.jpg";
 import italy from "assets/images/flags/italy.jpg";
 import russia from "assets/images/flags/russia.jpg";
+import i18n from "i18n";
 
 const DropdownItem = tw.div`flex justify-start items-center my-1 cursor-pointer hover:bg-gray-100 p-2 rounded-lg`;
 const Flag = tw.img`w-7`;
@@ -19,8 +20,25 @@ const Title = tw.span`ml-3`;
 const Global = tw(GlobalIcon)`w-9 h-9`;
 
 const Dropdown = ({ children, color, ...props }) => {
-  const [lng, setLng] = React.useState("fr");
-  const [title, setTitle] = React.useState("Francais");
+  const getTitle = (lng) => {
+    switch (lng.slice(0, 2)) {
+      case "en":
+        return "English";
+      case "fr":
+        return "Francais";
+      case "it":
+        return "Italiano";
+      case "ru":
+        return "Pусский";
+      case "de":
+        return "Deutsche";
+      case "es":
+        return "Español";
+      default:
+        break;
+    }
+  };
+  const [title, setTitle] = React.useState(getTitle(i18n.language));
 
   // dropdown props
   const [dropdownPopoverShow, setDropdownPopoverShow] = React.useState(false);
@@ -68,7 +86,7 @@ const Dropdown = ({ children, color, ...props }) => {
             >
               <DropdownItem
                 onClick={() => {
-                  setLng("en");
+                  i18n.changeLanguage("en");
                   setTitle("English");
                   setDropdownPopoverShow(false);
                 }}
@@ -78,7 +96,7 @@ const Dropdown = ({ children, color, ...props }) => {
               </DropdownItem>
               <DropdownItem
                 onClick={() => {
-                  setLng("fr");
+                  i18n.changeLanguage("fr");
                   setTitle("Francais");
                   setDropdownPopoverShow(false);
                 }}
@@ -88,7 +106,7 @@ const Dropdown = ({ children, color, ...props }) => {
               </DropdownItem>
               <DropdownItem
                 onClick={() => {
-                  setLng("es");
+                  i18n.changeLanguage("es");
                   setTitle("Español");
                   setDropdownPopoverShow(false);
                 }}
@@ -98,7 +116,7 @@ const Dropdown = ({ children, color, ...props }) => {
               </DropdownItem>
               <DropdownItem
                 onClick={() => {
-                  setLng("de");
+                  i18n.changeLanguage("de");
                   setTitle("Deutsche");
                   setDropdownPopoverShow(false);
                 }}
@@ -108,7 +126,7 @@ const Dropdown = ({ children, color, ...props }) => {
               </DropdownItem>
               <DropdownItem
                 onClick={() => {
-                  setLng("it");
+                  i18n.changeLanguage("it");
                   setTitle("Italiano");
                   setDropdownPopoverShow(false);
                 }}
@@ -118,7 +136,7 @@ const Dropdown = ({ children, color, ...props }) => {
               </DropdownItem>
               <DropdownItem
                 onClick={() => {
-                  setLng("ru");
+                  i18n.changeLanguage("ru");
                   setTitle("Pусский");
                   setDropdownPopoverShow(false);
                 }}

@@ -5,6 +5,7 @@ import PublicRoute from "routes/publicRoute";
 import ProtectedRoute from "routes/protectedRoute";
 
 import "./App.css";
+import "./i18n";
 
 function App() {
   return (

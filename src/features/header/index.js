@@ -2,12 +2,13 @@
  * Created Date: Wednesday May 12th 2021
  * Author: Amir Dorgham
  * -----
- * Last Modified: Saturday, May 15th 2021, 12:08:30 am
+ * Last Modified: Saturday, May 15th 2021, 2:06:26 am
  * Modified By: Amir Dorgham
  * -----
  */
 
 import React, { useState } from "react";
+import { withTranslation } from "react-i18next";
 import Light from "components/Icons/light";
 import Menu from "components/Icons/menu";
 import Close from "components/Icons/close";
@@ -26,7 +27,7 @@ const LightIcon = tw(Light)`cursor-pointer`;
 const MenuIcon = tw(Menu)`cursor-pointer`;
 const CloseIcon = tw(Close)`cursor-pointer`;
 
-const Header = () => {
+const Header = (props) => {
   const [open, setOpen] = useState(false);
   const toggleMenu = () => {
     setOpen(!open);
@@ -36,19 +37,21 @@ const Header = () => {
       <Row>
         <LeftContainer>
           <LightIcon />
-          <LanguageDropdown className="hidden md:inline">
-            Europe
-          </LanguageDropdown>
+          <LanguageDropdown className="hidden md:inline" />
         </LeftContainer>
         <RightContainer>
           <OutlinedButton className="hidden md:inline">
-            Contact support
+            {props.t("header.buttons.0")}
           </OutlinedButton>
           <DefaultButton className="hidden md:inline">
-            How it works
+            {props.t("header.buttons.1")}
           </DefaultButton>
-          <DefaultButton className="hidden md:inline">Reviews</DefaultButton>
-          <OutlinedButton className="hidden md:inline">Sign in</OutlinedButton>
+          <DefaultButton className="hidden md:inline">
+            {props.t("header.buttons.2")}
+          </DefaultButton>
+          <OutlinedButton className="hidden md:inline">
+            {props.t("header.buttons.3")}
+          </OutlinedButton>
 
           {open ? (
             <CloseIcon onClick={toggleMenu} />
@@ -61,8 +64,4 @@ const Header = () => {
     </Container>
   );
 };
-export default Header;
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
+export default withTranslation()(Header);

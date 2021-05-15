@@ -2,7 +2,7 @@
  * Created Date: Wednesday May 12th 2021
  * Author: Amir Dorgham
  * -----
- * Last Modified: Friday, May 14th 2021, 5:29:24 pm
+ * Last Modified: Saturday, May 15th 2021, 1:17:07 am
  * Modified By: Amir Dorgham
  * -----
  */
@@ -18,6 +18,7 @@ import { ReactComponent as DiscordIcon } from "assets/images/icons/discord.svg";
 import { ReactComponent as SkypeIcon } from "assets/images/icons/skype.svg";
 import { ReactComponent as TwitterIcon } from "assets/images/icons/twitter.svg";
 import { ReactComponent as LogoImage } from "assets/images/logos/logo.svg";
+import LogoLottie from "assets/lotties/logo";
 
 const Container = tw.div`mb-4 sm:px-3 flex relative bottom-0 flex-col w-full py-8`;
 const Row = tw.div`  flex flex-col lg:flex-row  justify-evenly w-full items-center`;
@@ -41,7 +42,8 @@ const Footer = () => {
         <Separator />
       </Row>
       <Row>
-        <Logo />
+        {/* <Logo /> */}
+        <LogoLottie />
       </Row>
       <MainRow>
         <Col>
