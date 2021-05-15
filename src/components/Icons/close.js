@@ -2,7 +2,7 @@
  * Created Date: Thursday May 13th 2021
  * Author: Amir Dorgham
  * -----
- * Last Modified: Friday, May 14th 2021, 7:54:37 pm
+ * Last Modified: Saturday, May 15th 2021, 2:26:49 am
  * Modified By: Amir Dorgham
  * -----
  */
@@ -27,9 +27,9 @@ const Close = (props) => {
           aria-hidden="true"
         >
           <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
             d="M6 18L18 6M6 6l12 12"
           />
         </svg>

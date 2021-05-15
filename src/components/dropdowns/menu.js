@@ -2,38 +2,19 @@
  * Created Date: Friday May 14th 2021
  * Author: Amir Dorgham
  * -----
- * Last Modified: Saturday, May 15th 2021, 12:47:14 am
+ * Last Modified: Saturday, May 15th 2021, 2:26:17 am
  * Modified By: Amir Dorgham
  * -----
  */
 import React, { useEffect, useState } from "react";
 import tw from "twin.macro";
 import { motion } from "framer-motion";
+import { withTranslation } from "react-i18next";
 
 const DropdownItem = tw.a`flex justify-start items-center my-1 cursor-pointer hover:bg-yellow-500 transition duration-300 ease-in-out`;
 const Text = tw.button`p-3  w-full text-white transition duration-300 ease-in-out text-gray-900  hover:text-white dark:text-white dark:hover:text-gray-900 font-semibold outline-none focus:outline-none`;
 
-const Dropdown = ({
-  navigation = [
-    {
-      title: "Contact support",
-      href: "#",
-    },
-    {
-      title: "How it works",
-      href: "#",
-    },
-    {
-      title: "Reviews",
-      href: "#",
-    },
-    {
-      title: "Sign in",
-      href: "#",
-    },
-  ],
-  ...props
-}) => {
+const Dropdown = (props) => {
   useEffect(() => {
     setIsOpen(props.open);
   });
@@ -44,6 +25,24 @@ const Dropdown = ({
 
   const [isOpen, setIsOpen] = useState(false);
   const [animating, setAnimating] = useState(false);
+  const navigation = [
+    {
+      title: props.t("header.buttons.0"),
+      href: "#",
+    },
+    {
+      title: props.t("header.buttons.1"),
+      href: "#",
+    },
+    {
+      title: props.t("header.buttons.2"),
+      href: "#",
+    },
+    {
+      title: props.t("header.buttons.3"),
+      href: "#",
+    },
+  ];
 
   return (
     <>
@@ -63,7 +62,7 @@ const Dropdown = ({
           !animating &&
           navigation.map((element, i) => {
             return (
-              <DropdownItem href={element.href}>
+              <DropdownItem key={i} href={element.href}>
                 <Text>{element.title}</Text>
               </DropdownItem>
             );
@@ -72,4 +71,4 @@ const Dropdown = ({
     </>
   );
 };
-export default Dropdown;
+export default withTranslation()(Dropdown);
