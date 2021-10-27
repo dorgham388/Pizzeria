@@ -2,7 +2,7 @@
  * Created Date: Friday May 14th 2021
  * Author: Amir Dorgham
  * -----
- * Last Modified: Saturday, May 15th 2021, 5:43:30 pm
+ * Last Modified: Wednesday, May 19th 2021, 3:10:28 pm
  * Modified By: Amir Dorgham
  * -----
  */
@@ -10,8 +10,6 @@ import React, { useEffect, useState } from "react";
 import tw from "twin.macro";
 import { motion } from "framer-motion";
 import { withTranslation } from "react-i18next";
-import Analog from "features/analog";
-import Separator from "components/separators/default";
 
 const DropdownItem = tw.a`flex justify-start items-center my-1 cursor-pointer hover:bg-yellow-500 transition duration-300 ease-in-out`;
 const Text = tw.button`p-3  w-full text-white transition duration-300 ease-in-out text-gray-900  hover:text-white dark:text-white dark:hover:text-gray-900 font-semibold outline-none focus:outline-none`;

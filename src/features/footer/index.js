@@ -2,7 +2,7 @@
  * Created Date: Wednesday May 12th 2021
  * Author: Amir Dorgham
  * -----
- * Last Modified: Saturday, May 15th 2021, 3:01:45 am
+ * Last Modified: Wednesday, October 27th 2021, 3:50:26 am
  * Modified By: Amir Dorgham
  * -----
  */
@@ -20,7 +20,7 @@ import { ReactComponent as TwitterIcon } from "assets/images/icons/twitter.svg";
 import { ReactComponent as LogoImage } from "assets/images/logos/logo.svg";
 import LogoLottie from "assets/lotties/logo";
 
-const Container = tw.div`mb-4 sm:px-3 flex relative bottom-0 flex-col w-full py-8`;
+const Container = tw.div`mb-4 sm:px-3 flex relative  flex-col w-full py-8 z-20`;
 const Row = tw.div`  flex flex-col lg:flex-row  justify-evenly w-full items-center`;
 const MainRow = tw(
   Row

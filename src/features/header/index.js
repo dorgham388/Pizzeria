@@ -2,7 +2,7 @@
  * Created Date: Wednesday May 12th 2021
  * Author: Amir Dorgham
  * -----
- * Last Modified: Saturday, May 15th 2021, 6:06:11 am
+ * Last Modified: Wednesday, October 27th 2021, 4:26:24 am
  * Modified By: Amir Dorgham
  * -----
  */
@@ -19,13 +19,16 @@ import DefaultButton from "components/buttons/default";
 import LanguageDropdown from "components/dropdowns/language";
 import tw from "twin.macro";
 
-const Container = tw.div`flex flex-col justify-center items-center `;
+const Container = tw.div`flex flex-col justify-center items-center`;
 const Row = tw.div`flex justify-between items-center px-6 md:px-8 h-16 min-w-full`;
 const LeftContainer = tw.div`flex justify-around items-center`;
 const RightContainer = tw.div`flex justify-around items-center`;
 const LightIcon = tw(Light)`cursor-pointer`;
 const MenuIcon = tw(Menu)`cursor-pointer`;
 const CloseIcon = tw(Close)`cursor-pointer`;
+const ResponsiveLanguageDropdown = tw(LanguageDropdown)`hidden md:inline`;
+const ResponsiveDefaultButton = tw(DefaultButton)`hidden md:inline`;
+const ResponsiveOutlinedButton = tw(OutlinedButton)`hidden md:inline`;
 
 const Header = (props) => {
   const [open, setOpen] = useState(false);
@@ -37,21 +40,21 @@ const Header = (props) => {
       <Row>
         <LeftContainer>
           <LightIcon />
-          <LanguageDropdown className="hidden md:inline" />
+          <ResponsiveLanguageDropdown />
         </LeftContainer>
         <RightContainer>
-          <DefaultButton className="hidden md:inline">
+          <ResponsiveDefaultButton>
             {props.t("header.buttons.0")}
-          </DefaultButton>
-          <DefaultButton className="hidden md:inline">
+          </ResponsiveDefaultButton>
+          <ResponsiveDefaultButton>
             {props.t("header.buttons.1")}
-          </DefaultButton>
-          <DefaultButton className="hidden md:inline">
+          </ResponsiveDefaultButton>
+          <ResponsiveDefaultButton>
             {props.t("header.buttons.2")}
-          </DefaultButton>
-          <OutlinedButton className="hidden md:inline">
+          </ResponsiveDefaultButton>
+          <ResponsiveOutlinedButton>
             {props.t("header.buttons.3")}
-          </OutlinedButton>
+          </ResponsiveOutlinedButton>
 
           {open ? (
             <CloseIcon onClick={toggleMenu} />

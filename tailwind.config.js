@@ -15,9 +15,15 @@ module.exports = {
       yellow: colors.amber,
     },
     extend: {
+      zIndex: {
+        "-10": "-10",
+      },
       transitionProperty: {
         height: "height",
       },
+      backgroundImage: (theme) => ({
+        "main-bg": "url('/src/assets/images/backgrounds/bg1.jpg')",
+      }),
     },
   },
   variants: {
