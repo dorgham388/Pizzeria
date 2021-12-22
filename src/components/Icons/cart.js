@@ -2,7 +2,7 @@
  * Created Date: Wednesday December 22nd 2021
  * Author: Amir Dorgham
  * -----
- * Last Modified: Wednesday, December 22nd 2021, 1:35:29 pm
+ * Last Modified: Wednesday, December 22nd 2021, 4:05:58 pm
  * Modified By: Amir Dorgham
  * -----
  */
@@ -16,22 +16,6 @@ const Cart = (props) => {
   return (
     <CartIcon onClick={props.onClick}>
       <span className="sr-only">Cart</span>
-      {/* <svg
-        xmlns="http://www.w3.org/2000/svg"
-        className={props.className}
-        fill="transparent"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-        aria-hidden="true"
-      ></svg>
-      <circle cx="10" cy="20.5" r="1" />
-      <circle cx="18" cy="20.5" r="1" />
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="2"
-        d="M2.5 2.5h3l2.7 12.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6l1.6-8.4H7.1"
-      /> */}
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="28"

@@ -6,7 +6,7 @@ import Header from "features/header";
 // import Menu from "features/menu";
 // import DesctiptionList from "features/desctiptionList";
 
-import Categories from "features/categories";
+import Categories from "components/categories";
 import ProductRow from "features/productRow";
 
 import Footer from "features/footer";
@@ -32,7 +32,7 @@ const Home = () => {
   return (
     <Container>
       <Header />
-      <div className="flex w-full ">
+      <div className="flex w-full">
         <Title>Kedge Pizzeria</Title>
       </div>
 
