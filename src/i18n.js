@@ -2,7 +2,7 @@
  * Created Date: Saturday May 15th 2021
  * Author: Amir Dorgham
  * -----
- * Last Modified: Saturday, May 15th 2021, 2:08:24 am
+ * Last Modified: Wednesday, December 22nd 2021, 1:38:05 pm
  * Modified By: Amir Dorgham
  * -----
  */
@@ -55,7 +55,7 @@ i18n
     },
 
     react: {
-      wait: true,
+      useSuspense: true,
     },
   });
 

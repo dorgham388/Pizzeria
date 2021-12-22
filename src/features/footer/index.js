@@ -2,7 +2,7 @@
  * Created Date: Wednesday May 12th 2021
  * Author: Amir Dorgham
  * -----
- * Last Modified: Wednesday, October 27th 2021, 3:50:26 am
+ * Last Modified: Wednesday, December 22nd 2021, 3:04:02 am
  * Modified By: Amir Dorgham
  * -----
  */
@@ -88,7 +88,7 @@ const Footer = () => {
         </Col>
         <Col>
           <Description>
-            Created by <Social href="#">Bawses Corporation</Social>
+            Created by <Social href="#">Amir Dorgham</Social>
           </Description>
         </Col>
       </MainRow>
