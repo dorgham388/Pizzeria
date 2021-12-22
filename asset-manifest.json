@@ -1,34 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.a99edaf5.chunk.css",
-    "main.js": "/static/js/main.2c6375d4.chunk.js",
-    "main.js.map": "/static/js/main.2c6375d4.chunk.js.map",
+    "main.css": "/static/css/main.21d05f3a.chunk.css",
+    "main.js": "/static/js/main.494c5dcc.chunk.js",
+    "main.js.map": "/static/js/main.494c5dcc.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.370a152e.js",
     "runtime-main.js.map": "/static/js/runtime-main.370a152e.js.map",
-    "static/js/2.86be7aaa.chunk.js": "/static/js/2.86be7aaa.chunk.js",
-    "static/js/2.86be7aaa.chunk.js.map": "/static/js/2.86be7aaa.chunk.js.map",
+    "static/js/2.a104e4b4.chunk.js": "/static/js/2.a104e4b4.chunk.js",
+    "static/js/2.a104e4b4.chunk.js.map": "/static/js/2.a104e4b4.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.a99edaf5.chunk.css.map": "/static/css/main.a99edaf5.chunk.css.map",
-    "static/js/2.86be7aaa.chunk.js.LICENSE.txt": "/static/js/2.86be7aaa.chunk.js.LICENSE.txt",
-    "static/media/contact24.c49e6a27.svg": "/static/media/contact24.c49e6a27.svg",
+    "static/css/main.21d05f3a.chunk.css.map": "/static/css/main.21d05f3a.chunk.css.map",
+    "static/js/2.a104e4b4.chunk.js.LICENSE.txt": "/static/js/2.a104e4b4.chunk.js.LICENSE.txt",
     "static/media/discord.9cc6df1c.svg": "/static/media/discord.9cc6df1c.svg",
-    "static/media/expert.795e9971.svg": "/static/media/expert.795e9971.svg",
     "static/media/fb.526ef646.svg": "/static/media/fb.526ef646.svg",
-    "static/media/fb.e6ec1674.webp": "/static/media/fb.e6ec1674.webp",
-    "static/media/global.svg": "/static/media/global.ec3ec671.svg",
-    "static/media/hexagone.93f18e4f.svg": "/static/media/hexagone.93f18e4f.svg",
+    "static/media/global.svg": "/static/media/global.f2e59fcf.svg",
     "static/media/instagram.e9177a41.svg": "/static/media/instagram.e9177a41.svg",
-    "static/media/linkedin.ba56ca52.jpg": "/static/media/linkedin.ba56ca52.jpg",
     "static/media/logo.afbbdd06.svg": "/static/media/logo.afbbdd06.svg",
-    "static/media/shield.f8f56acc.svg": "/static/media/shield.f8f56acc.svg",
+    "static/media/peperoni.17844b31.webp": "/static/media/peperoni.17844b31.webp",
     "static/media/skype.1acb9c9f.svg": "/static/media/skype.1acb9c9f.svg",
-    "static/media/twitter.5ad6e3c2.svg": "/static/media/twitter.5ad6e3c2.svg",
-    "static/media/whatsApp.b3eb4a3b.webp": "/static/media/whatsApp.b3eb4a3b.webp"
+    "static/media/thon.1e4105f7.webp": "/static/media/thon.1e4105f7.webp",
+    "static/media/twitter.5ad6e3c2.svg": "/static/media/twitter.5ad6e3c2.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.370a152e.js",
-    "static/js/2.86be7aaa.chunk.js",
-    "static/css/main.a99edaf5.chunk.css",
-    "static/js/main.2c6375d4.chunk.js"
+    "static/js/2.a104e4b4.chunk.js",
+    "static/css/main.21d05f3a.chunk.css",
+    "static/js/main.494c5dcc.chunk.js"
   ]
 }
